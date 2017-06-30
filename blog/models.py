@@ -9,6 +9,7 @@ class Post(models.Model):
     #default attributes
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length= 200)
+    text = models.TextField()
     created_date = models.DateTimeField(
         default=timezone.now
     )
